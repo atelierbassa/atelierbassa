@@ -113,10 +113,10 @@
     }
 
     .intro-image img {
-      width: 100%;
-      height: auto;
-      display: block;
-    }
+  width: 110%;
+  height: auto;
+  display: block;
+}
 
     .intro-divider {
       max-width: 1140px;
@@ -146,11 +146,13 @@
     }
 
     .projecten-grid {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 20px;
-  padding: 0 60px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+  justify-items: center;
+  align-items: start;
+  max-width: 1140px;
+  margin: 0 auto;
 }
 
     margin-bottom: 48px;
@@ -167,7 +169,9 @@
   font-family: 'Josefin Sans', sans-serif;
   font-weight: 300;
   text-transform: none;
-  margin-top: 24px;
+  margin-top: 60px;
+  font-size: 16px;
+  text-align: center;
 }
   .diensten-title {
   font-family: 'Josefin Sans', sans-serif;
@@ -263,6 +267,9 @@
   text-transform: none;
 }
 
+.projecten-item img {
+  margin-bottom: 24px;
+}
 </style>
 </head>
 <body>
@@ -362,28 +369,28 @@
   </style>
 
   <section class="projecten-section" id="projecten">
-    <h2>Projecten</h2>
-    <div class="projecten-grid">
-      <div class="projecten-item">
-        <img src="images/5CC17561-0F1E-4607-AF3E-8A4300D74D40.PNG" style="width: 100%; max-width: 320px; height: auto; display: block; margin: 0 auto;">
-        <p>Japandi stijl</p>
-      </div>
-      <div class="projecten-item">
-        <img src="images/AFF0EDBA-9BD8-4E5B-AF3E-4C025257D7EE 2.PNG" style="width: 100%; max-width: 280px; height: auto; display: block; margin: 0 auto;">
-        <p>Chic</p>
-      </div>
-      <div class="projecten-item">
-        <img src="images/E12528CE-E0C5-4FE8-A418-E90608069C9D.PNG" style="width: 100%; max-width: 280px; height: auto; display: block; margin: 0 auto;">
-        <p>Trendy</p>
-      </div>
-      <div class="projecten-item">
-        <img src="images/DEDE6F9E-16F0-4844-AC71-945C2B99450F.PNG" style="width: 100%; max-width: 280px; height: auto; display: block; margin: 0 auto;">
-        <p>Tijdloos</p>
-      </div>
+  <h2>Projecten</h2>
+  <div class="projecten-grid">
+    <div class="projecten-item">
+      <img src="images/5CC17561-0F1E-4607-AF3E-8A4300D74D40.PNG" style="width: 240px; height: auto;">
+      <p>Japandi stijl</p>
     </div>
-  </section>
+    <div class="projecten-item">
+      <img src="images/AFF0EDBA-9BD8-4E5B-AF3E-4C025257D7EE 2.PNG" style="width: 240px; height: auto;">
+      <p>Chic</p>
+    </div>
+    <div class="projecten-item">
+      <img src="images/E12528CE-E0C5-4FE8-A418-E90608069C9D.PNG" style="width: 240px; height: auto;">
+      <p>Trendy</p>
+    </div>
+    <div class="projecten-item">
+      <img src="images/DEDE6F9E-16F0-4844-AC71-945C2B99450F.PNG" style="width: 240px; height: auto;">
+      <p>Tijdloos</p>
+    </div>
+  </div>
+</section>
 
-  <div class="intro-divider">
+<div class="intro-divider">
     <hr>
   </div>
 
@@ -536,16 +543,7 @@
 
   <footer class="footer">
   <div class="footer-content">
-    <img src="images/BASSA-logo groot.png" alt="BASSA Footer Logo" class="footer-logo">
-    <div class="footer-icons">
-      <a href="https://www.instagram.com/atelierbassa" target="_blank">
-        <img src="images/Asset 2.svg" alt="Instagram" class="icon">
-      </a>
-      <a href="mailto:info@atelierbassa.nl">
-        <img src="images/Asset 1.svg" alt="E-mail" class="icon">
-      </a>
-    </div>
-      <p class="footer-copy">© 2025 Atelier Bassa. All rights reserved</p>
+    <p class="footer-copy">© 2025 Atelier Bassa. All rights reserved</p>
   </div>
 </footer>
 </body>
