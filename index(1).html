@@ -7,10 +7,544 @@
   <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Mrs+Saint+Delafield&display=swap" rel="stylesheet">
   <style>
-  /* CSS styles */
-  </style>
+.footer {
+  background-color: white;
+  width: 100%;
+  margin-top: 60px;
+  padding: 60px 20px;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 14px;
+  text-transform: none;
+  color: black;
+  display: flex;
+  justify-content: center;
+}
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Josefin Sans', sans-serif;
+      text-transform: uppercase;
+    }
+
+    header {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      border-bottom: 1px solid black;
+      position: fixed;
+      top: 0;
+      left: 0;
+      background-color: white;
+      z-index: 1000;
+    }
+
+    .logo img {
+      height: 50px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 40px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: black;
+      font-size: 18px;
+      transition: color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      color: #555;
+    }
+
+    body::before {
+      content: "";
+      display: block;
+      height: 90px;
+    }
+
+    .intro-section {
+      max-width: 1140px;
+      margin: 100px auto 100px auto;
+      padding: 0 60px;
+      display: flex;
+      align-items: flex-start;
+      gap: 60px;
+    }
+
+    .intro-text {
+      flex: 1;
+    }
+
+    .intro-text h2 {
+      font-family: 'Josefin Sans', sans-serif;
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    .intro-text h2 span.block {
+      display: block;
+      font-family: 'Mrs Saint Delafield', cursive;
+      font-weight: normal;
+      font-size: 36px;
+      text-transform: none;
+      margin-top: 5px;
+    }
+
+    .intro-text p {
+      font-family: 'Josefin Sans', sans-serif;
+      font-style: italic;
+      font-weight: 300;
+      font-size: 18px;
+      line-height: 1.6;
+      text-transform: none;
+    }
+
+    .intro-image {
+      flex: 1;
+    }
+
+    .intro-image img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .intro-divider {
+      max-width: 1140px;
+      margin: 40px auto;
+      padding: 0 60px;
+    }
+
+    .intro-divider hr {
+      border: none;
+      border-top: 1px solid black;
+    }
+
+    .projecten-section {
+  max-width: 1140px;
+  margin: 100px auto;
+  padding: 0 60px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+    .projecten-section h2 {
+      font-family: 'Josefin Sans', sans-serif;
+      font-size: 24px;
+      margin-bottom: 40px;
+    }
+
+    .projecten-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 60px;
+  justify-content: center;
+}
+
+    margin-bottom: 48px;
+
+.projecten-item:hover img {
+  transform: scale(1.03);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+
+
+    $1
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    .projecten-item p {
+      font-family: 'Josefin Sans', sans-serif;
+      font-weight: 300;
+      text-transform: none;
+    }
+  .diensten-title {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 14px;
+  text-transform: none;
+  margin-top: 60px;
+}
+
+.footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 14px;
+  text-transform: none;
+  margin-top: 60px;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 12px;
+}
+
+.footer-content img {
+  height: 40px;
+}
+
+.footer-contact p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin: 5px 0;
+  font-size: 16px;
+}
+
+.footer-contact .icon {
+  height: 20px;
+  width: 20px;
+}
+
+.footer {
+  background-color: white;
+  height: 120px;
+  width: 100%;
+  margin-top: 60px;
+}
+
+.footer-logo {
+  height: 40px;
+  margin-bottom: 24px;
+}
+
+.footer-logo {
+  height: 40px;
+  margin-bottom: 16px;
+}
+
+.footer-icons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.footer-icons .icon {
+  height: 24px;
+  width: 24px;
+}
+
+.footer-copy {
+  font-size: 12px;
+  margin-top: 24px;
+  color: #555;
+  text-transform: none;
+}
+
+</style>
 </head>
 <body>
-  <!-- HTML content omitted for brevity -->
+
+  <header>
+    <div class="logo">
+      <img src="BASSA-logo groot.png" alt="BASSA Logo">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#over-ons">Over ons</a></li>
+        <li><a href="#projecten">Projecten</a></li>
+        <li><a href="#diensten">Diensten</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="intro-section">
+    <div class="intro-text">
+      <h2>Visualiseer jouw woning <span class="block">zoals ’ie echt voelt.</span></h2>
+      <p>
+        Bij Atelier Bassa brengen we woningen tot leven voordat ze gebouwd of verbouwd zijn.
+        Met doordachte plattegronden, 3D-modellen en fotorealistische visuals helpen wij je om
+        keuzes te maken die kloppen: ruimtelijk, esthetisch én praktisch. Of je nu particulier bent,
+        makelaar of interieurprofessional: wij vertalen jouw ideeën naar heldere beelden die spreken
+        en die jouw huis als een echte thuis laten voelen.
+      </p>
+    </div>
+    <div class="intro-image">
+      <img src="27A6061E-3312-48A4-950C-F87B5E87EB07.png" alt="Visualisatie interieur">
+    </div>
+  </section>
+
+  <div class="intro-divider">
+    <hr>
+  </div>
+
+  <style>
+    .contact-section {
+      background-color: #f5f3f0;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .contact-section h2 {
+      font-family: 'Josefin Sans', sans-serif;
+      font-size: 24px;
+      font-weight: 400;
+      margin-bottom: 40px;
+      text-transform: uppercase;
+    }
+
+    .contact-form {
+      max-width: 500px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      background: transparent;
+      border: none;
+      border-bottom: 1px solid #333;
+      padding: 10px;
+      font-family: 'Josefin Sans', sans-serif;
+      font-size: 14px;
+      color: #000;
+      text-transform: none;
+    }
+
+    .contact-form input::placeholder,
+    .contact-form textarea::placeholder {
+      color: #aaa;
+    }
+
+    .contact-form button {
+  margin-top: 20px;
+  padding: 12px 40px;
+  background: white;
+  color: black;
+  border: none;
+  border-radius: 30px;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+    .contact-form button:hover {
+  background: black;
+  color: white;
+}
+  </style>
+
+  <section class="projecten-section" id="projecten">
+    <h2>Projecten</h2>
+    <div class="projecten-grid">
+      <div class="projecten-item">
+        <img src="5CC17561-0F1E-4607-AF3E-8A4300D74D40.PNG" alt="Japandi stijl">
+        <p>Japandi stijl</p>
+      </div>
+      <div class="projecten-item">
+        <img src="AFF0EDBA-9BD8-4E5B-AF3E-4C025257D7EE 2.PNG" alt="Chic">
+        <p>Chic</p>
+      </div>
+      <div class="projecten-item">
+        <img src="E12528CE-E0C5-4FE8-A418-E90608069C9D.PNG" alt="Trendy">
+        <p>Trendy</p>
+      </div>
+      <div class="projecten-item">
+        <img src="DEDE6F9E-16F0-4844-AC71-945C2B99450F.PNG" alt="Tijdloos">
+        <p>Tijdloos</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="intro-divider">
+    <hr>
+  </div>
+
+  <section class="diensten-section" id="diensten">
+    <div style="text-align: center; margin-bottom: 40px;"><h2 class="diensten-title">Diensten</h2></div>
+    <div class="diensten-grid">
+      <div class="dienst">
+        <h3>2D plattegronden</h3>
+        <p class="sub">Voor verbouwing, nieuwbouw<br>of inspiratie</p>
+        <hr>
+        <ul>
+          <li>✔ Plattegronden van elke laag met maatvoering</li>
+          <li>✔ 2 revisieronde</li>
+          <li>✔ Indelingsadvies</li>
+          <li>✔ Inmeten woning</li>
+        </ul>
+        <hr>
+        <p class="prijs">€130,- / aanvraag</p>
+      </div>
+
+      <div class="dienst">
+        <h3>3D model van jouw woning</h3>
+        <p class="sub">Volledige woning of<br>verdieping in 3D</p>
+        <hr>
+        <ul>
+          <li>✔ 3D model van de gehele woning</li>
+          <li>✔ 2 revisierondes</li>
+          <li>✔ Indelingsadvies</li>
+          <li>✔ Inmeten woning</li>
+        </ul>
+        <hr>
+        <p class="prijs">€295,- / aanvraag</p>
+      </div>
+
+      <div class="dienst">
+        <h3>Fotorealistische visuals</h3>
+        <p class="sub">Levensechte beelden van<br>jouw ruimte</p>
+        <hr>
+        <ul>
+          <li>✔ 3 gekozen views uitgewerkt tot levensechte visuals</li>
+          <li>✔ 2 revisierondes</li>
+          <li>✔ Begeleiding opstellen moodboard</li>
+        </ul>
+        <hr>
+        <p class="prijs">€85,- / visual</p>
+      </div>
+
+      <div class="dienst">
+        <h3>Compleet pakket</h3>
+        <p class="sub">2D + 3D + 3 visuals</p>
+        <hr>
+        <ul>
+          <li>✔ Plattegronden van elke laag</li>
+          <li>✔ 2 revisierondes</li>
+          <li>✔ Indelingsadvies</li>
+          <li>✔ Begeleiding opstellen moodboard</li>
+        </ul>
+        <hr>
+        <p class="prijs">€495,- / project</p>
+      </div>
+    </div>
+  </section>
+
+  
+
+  <style>
+    .diensten-section {
+      max-width: 1140px;
+      margin: 100px auto;
+      padding: 0 60px;
+    }
+
+    .diensten-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 40px;
+      border-left: 1px dotted #888;
+      border-right: 1px dotted #888;
+    }
+
+    .dienst {
+      padding: 0 20px;
+      border-right: 2px dotted #888;
+    }
+
+    .dienst:last-child {
+      border-right: none;
+    }
+
+    .dienst h3 {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  text-transform: none;
+  text-align: center;
+  margin-bottom: 20px;
+  min-height: 44px;
+}
+
+    .dienst .sub {
+  font-weight: 400;
+  font-size: 14px;
+  text-align: center;
+  text-transform: none;
+  margin-bottom: 20px;
+  min-height: 40px;
+}
+
+    .dienst hr {
+      border: none;
+      border-top: 1px solid #999;
+      margin: 10px auto;
+      width: 100%;
+    }
+
+    .dienst ul {
+      list-style: none;
+      padding: 0;
+      margin: 10px 0;
+    }
+
+    .dienst ul li {
+  font-weight: 300;
+  text-transform: none;
+  font-size: 14px;
+  margin: 18px 0;
+  line-height: 1.6;
+}
+
+    .dienst .prijs {
+  font-weight: 600;
+  font-size: 14px;
+  text-align: center;
+  margin-top: 20px;
+  min-height: 24px;
+}
+  </style>
+  <section id="contact" class="contact-section">
+    <h2>Contact</h2>
+    <form action="https://formspree.io/f/xkgrdnjw" method="POST" class="contact-form">
+      <input type="text" name="naam" placeholder="Voor- en achternaam" required>
+      <input type="email" name="email" placeholder="E-mailadres" required>
+      <input type="tel" name="telefoon" placeholder="Telefoonnummer">
+      <textarea name="bericht" placeholder="Bericht" required></textarea>
+      <button type="submit">VERSTUUR</button>
+    </form>
+  </section>
+
+  
+
+  <footer class="footer">
+  <div class="footer-content">
+    <img src="BASSA-logo groot.png" alt="BASSA Footer Logo" class="footer-logo">
+    <div class="footer-icons">
+      <a href="https://www.instagram.com/atelierbassa" target="_blank">
+        <img src="Asset 2.svg" alt="Instagram" class="icon">
+      </a>
+      <a href="mailto:info@atelierbassa.nl">
+        <img src="Asset 1.svg" alt="E-mail" class="icon">
+      </a>
+    </div>
+      <p class="footer-copy">© 2025 Atelier Bassa. All rights reserved</p>
+  </div>
+</footer>
 </body>
 </html>
