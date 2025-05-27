@@ -285,10 +285,9 @@ html {
     </div>
     <nav>
       <ul>
-        <li><a href="#over-ons">Over ons</a></li>
-        <li><a href="#projecten">Projecten</a></li>
-        <li><a href="#diensten">Diensten</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#projecten-anchor">Projecten</a></li>
+        <li><a href="#diensten-anchor">Diensten</a></li>
+        <li><a href="#contact-anchor">Contact</a></li>
       </ul>
     </nav>
   </header>
@@ -374,22 +373,23 @@ html {
   </style>
 
   <section class="projecten-section" id="projecten">
+  <div id="projecten-anchor" style="position: relative; top: -100px;"></div>
   <h2>Projecten</h2>
-  <div class="projecten-grid">
+  <div class="projecten-grid" style="max-width: 100%;">
     <div class="projecten-item">
-      <img src="images/5CC17561-0F1E-4607-AF3E-8A4300D74D40.PNG" style="width: 240px; height: auto;">
+      <img src="images/5CC17561-0F1E-4607-AF3E-8A4300D74D40.PNG" style="width: 100%; height: 220px; object-fit: cover;">
       <div style="margin-top: 32px;"><p>Japandi stijl</p></div>
     </div>
     <div class="projecten-item">
-      <img src="images/AFF0EDBA-9BD8-4E5B-AF3E-4C025257D7EE 2.PNG" style="width: 240px; height: auto;">
+      <img src="images/AFF0EDBA-9BD8-4E5B-AF3E-4C025257D7EE 2.PNG" style="width: 100%; height: 220px; object-fit: cover;">
       <div style="margin-top: 32px;"><p>Chic</p></div>
     </div>
     <div class="projecten-item">
-      <img src="images/E12528CE-E0C5-4FE8-A418-E90608069C9D.PNG" style="width: 240px; height: auto;">
+      <img src="images/E12528CE-E0C5-4FE8-A418-E90608069C9D.PNG" style="width: 100%; height: 220px; object-fit: cover;">
       <div style="margin-top: 32px;"><p>Trendy</p></div>
     </div>
     <div class="projecten-item">
-      <img src="images/DEDE6F9E-16F0-4844-AC71-945C2B99450F.PNG" style="width: 240px; height: auto;">
+      <img src="images/DEDE6F9E-16F0-4844-AC71-945C2B99450F.PNG" style="width: 100%; height: 220px; object-fit: cover;">
       <div style="margin-top: 32px;"><p>Tijdloos</p></div>
     </div>
   </div>
@@ -400,7 +400,8 @@ html {
   </div>
 
   <section class="diensten-section" id="diensten">
-    <div style="text-align: center; margin-bottom: 40px;"><h2 class="diensten-title">Diensten</h2></div>
+    <div style="text-align: center; margin-bottom: 40px;"><div id="diensten-anchor" style="position: relative; top: -100px;"></div>
+<h2 class="diensten-title">Diensten</h2></div>
     <div class="diensten-grid">
       <div class="dienst">
         <h3>2D plattegronden</h3>
@@ -553,7 +554,8 @@ html {
 }
   </style>
   <section id="contact" class="contact-section">
-    <h2>Contact</h2>
+    <div id="contact-anchor" style="position: relative; top: -100px;"></div>
+<h2>Contact</h2>
     <form id="contact-form" class="contact-form">
       <input type="text" name="naam" placeholder="Voor- en achternaam" required>
       <input type="email" name="email" placeholder="E-mailadres" required>
