@@ -55,15 +55,19 @@
     }
 
     nav ul li a {
-      text-decoration: none;
-      color: black;
-      font-size: 18px;
-      transition: color 0.3s ease;
-    }
+  color: black;
+  text-decoration: none;
+  padding: 6px 12px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+
 
     nav ul li a:hover {
-      color: #555;
-    }
+  background-color: black;
+  color: white;
+  border-radius: 0px;
+}
 
     body::before {
       content: "";
@@ -354,21 +358,16 @@ html {
 
     .contact-form button {
   margin-top: 20px;
-  padding: 12px 40px;
+  padding: 12px 30px;
   background: white;
   color: black;
   border: none;
-  border-radius: 30px;
+  border-radius: 0px;
   font-family: 'Josefin Sans', sans-serif;
   font-weight: bold;
   text-transform: uppercase;
   cursor: pointer;
   transition: background 0.3s ease, color 0.3s ease;
-}
-
-    .contact-form button:hover {
-  background: black;
-  color: white;
 }
   </style>
 
@@ -569,7 +568,7 @@ html {
 
   <footer class="footer">
   <div class="footer-content">
-    <img src="images/BASSA-logo groot.png" alt="Footer Logo" class="footer-logo">
+    
     <p class="footer-copy" style="font-family: 'Josefin Sans', sans-serif; font-weight: 300;">© 2025 Atelier Bassa. All rights reserved</p>
   </div>
 </footer>
@@ -593,5 +592,6 @@ html {
     }
   });
 </script>
+
 </body>
 </html>
