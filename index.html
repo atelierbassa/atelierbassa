@@ -113,7 +113,7 @@
     }
 
     .intro-image img {
-  width: 110%;
+  max-width: 100%;
   height: auto;
   display: block;
 }
@@ -140,10 +140,10 @@
 }
 
     .projecten-section h2 {
-      font-family: 'Josefin Sans', sans-serif;
-      font-size: 24px;
-      margin-bottom: 40px;
-    }
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 24px;
+  margin-bottom: 15px;
+}
 
     .projecten-grid {
   display: grid;
@@ -270,6 +270,9 @@
 .projecten-item img {
   margin-bottom: 24px;
 }
+html {
+  scroll-behavior: smooth;
+}
 </style>
 </head>
 <body>
@@ -373,19 +376,19 @@
   <div class="projecten-grid">
     <div class="projecten-item">
       <img src="images/5CC17561-0F1E-4607-AF3E-8A4300D74D40.PNG" style="width: 240px; height: auto;">
-      <p>Japandi stijl</p>
+      <div style="margin-top: 32px;"><p>Japandi stijl</p></div>
     </div>
     <div class="projecten-item">
       <img src="images/AFF0EDBA-9BD8-4E5B-AF3E-4C025257D7EE 2.PNG" style="width: 240px; height: auto;">
-      <p>Chic</p>
+      <div style="margin-top: 32px;"><p>Chic</p></div>
     </div>
     <div class="projecten-item">
       <img src="images/E12528CE-E0C5-4FE8-A418-E90608069C9D.PNG" style="width: 240px; height: auto;">
-      <p>Trendy</p>
+      <div style="margin-top: 32px;"><p>Trendy</p></div>
     </div>
     <div class="projecten-item">
       <img src="images/DEDE6F9E-16F0-4844-AC71-945C2B99450F.PNG" style="width: 240px; height: auto;">
-      <p>Tijdloos</p>
+      <div style="margin-top: 32px;"><p>Tijdloos</p></div>
     </div>
   </div>
 </section>
@@ -464,17 +467,29 @@
     }
 
     .diensten-grid {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 40px;
-      border-left: 1px dotted #888;
-      border-right: 1px dotted #888;
-    }
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+}
 
     .dienst {
-      padding: 0 20px;
-      border-right: 2px dotted #888;
-    }
+  padding: 0 20px;
+  border-right: none;
+  position: relative;
+}
+
+.dienst:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background-image: repeating-linear-gradient(to bottom, #888 0, #888 2px, transparent 2px, transparent 4px, #888 4px, #888 6px, transparent 6px, transparent 8px);
+  background-position: right;
+  background-size: 2px 8px;
+  background-repeat: repeat-y;
+}
 
     .dienst:last-child {
       border-right: none;
