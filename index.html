@@ -469,25 +469,32 @@ html {
     .diensten-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 40px;
+  column-gap: 30px;
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 20px;
+  position: relative;
 }
 
     .dienst {
-  padding: 0 20px;
+  padding: 0 10px;
   border-right: none;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .dienst:not(:last-child)::after {
   content: "";
   position: absolute;
   top: 0;
-  right: 0;
-  width: 2px;
+  right: -15px;
+  width: 4px;
   height: 100%;
   background-image: repeating-linear-gradient(to bottom, #888 0, #888 2px, transparent 2px, transparent 4px, #888 4px, #888 6px, transparent 6px, transparent 8px);
-  background-position: right;
-  background-size: 2px 8px;
+  background-position: center;
+  background-size: 4px 8px;
   background-repeat: repeat-y;
 }
 
