@@ -552,7 +552,7 @@ html {
   </style>
   <section id="contact" class="contact-section">
     <h2>Contact</h2>
-    <form action="https://formspree.io/f/xkgrdnjw" method="POST" class="contact-form">
+    <form id="contact-form" class="contact-form">
       <input type="text" name="naam" placeholder="Voor- en achternaam" required>
       <input type="email" name="email" placeholder="E-mailadres" required>
       <input type="tel" name="telefoon" placeholder="Telefoonnummer">
@@ -569,5 +569,25 @@ html {
     <p class="footer-copy" style="font-family: 'Josefin Sans', sans-serif; font-weight: 300;">© 2025 Atelier Bassa. All rights reserved</p>
   </div>
 </footer>
+<script>
+  const form = document.getElementById('contact-form');
+  form.addEventListener('submit', async function (e) {
+    e.preventDefault();
+    const data = new FormData(form);
+    const response = await fetch('https://formspree.io/f/xkgrdnjw', {
+      method: 'POST',
+      body: data,
+      headers: {
+        'Accept': 'application/json'
+      }
+    });
+
+    if (response.ok) {
+      form.innerHTML = "<p style='text-align:center;'>Bedankt voor je bericht! We nemen snel contact op.</p>";
+    } else {
+      form.innerHTML = "<p style='text-align:center;color:red;'>Er is iets misgegaan. Probeer opnieuw.</p>";
+    }
+  });
+</script>
 </body>
 </html>
