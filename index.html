@@ -216,27 +216,37 @@
     <section id="contact" style="background-color: #f5f3f0; margin-top: 4rem; padding: 4rem 2rem; text-align: center;">
       <h2 style="font-weight: 600; text-transform: uppercase; font-size: 1.5rem; margin-bottom: 3rem;">Contact</h2>
       <form action="https://formspree.io/f/xkgrdnjw" method="POST" style="max-width: 400px; margin: 0 auto;">
+  <style>
+    #contact input:focus + label,
+    #contact input:not(:placeholder-shown) + label,
+    #contact textarea:focus + label,
+    #contact textarea:not(:placeholder-shown) + label {
+      top: -1rem;
+      font-size: 0.8rem;
+      color: #333;
+    }
+  </style>
         <div style="margin-bottom: 2rem; position: relative;">
-          <input type="text" required style="width: 100%; border: none; border-bottom: 1px solid #111; background: transparent; font-size: 1rem; padding: 0.5rem 0; outline: none;">
+          <input type="text" required placeholder=" " style="width: 100%; border: none; border-bottom: 1px solid #111; background: transparent; font-size: 1rem; padding: 0.5rem 0; outline: none;">
           <label style="position: absolute; top: 0.5rem; left: 0; font-size: 1rem; color: #888; pointer-events: none; transition: 0.2s;">Voor- en achternaam</label>
         </div>
         <div style="margin-bottom: 2rem; position: relative;">
-          <input type="email" required style="width: 100%; border: none; border-bottom: 1px solid #111; background: transparent; font-size: 1rem; padding: 0.5rem 0; outline: none;">
+          <input type="email" required placeholder=" " style="width: 100%; border: none; border-bottom: 1px solid #111; background: transparent; font-size: 1rem; padding: 0.5rem 0; outline: none;">
           <label style="position: absolute; top: 0.5rem; left: 0; font-size: 1rem; color: #888; pointer-events: none; transition: 0.2s;">E-mailadres</label>
         </div>
         <div style="margin-bottom: 2rem; position: relative;">
-          <input type="tel" style="width: 100%; border: none; border-bottom: 1px solid #111; background: transparent; font-size: 1rem; padding: 0.5rem 0; outline: none;">
+          <input type="tel" placeholder=" " style="width: 100%; border: none; border-bottom: 1px solid #111; background: transparent; font-size: 1rem; padding: 0.5rem 0; outline: none;">
           <label style="position: absolute; top: 0.5rem; left: 0; font-size: 1rem; color: #888; pointer-events: none; transition: 0.2s;">Telefoonnummer</label>
         </div>
         <div style="margin-bottom: 2rem; position: relative;">
-          <textarea rows="4" required style="width: 100%; border: none; border-bottom: 1px solid #111; background: transparent; font-size: 1rem; padding: 0.5rem 0; outline: none;"></textarea>
+          <textarea rows="4" required placeholder=" " style="width: 100%; border: none; border-bottom: 1px solid #111; background: transparent; font-size: 1rem; padding: 0.5rem 0; outline: none;"></textarea>
           <label style="position: absolute; top: 0.5rem; left: 0; font-size: 1rem; color: #888; pointer-events: none; transition: 0.2s;">Bericht</label>
         </div>
         <button type="submit" class="verzendknop">Verstuur</button>
       </form>
     </section>
       <footer style="background-color: #fff; color: #111; text-align: center; padding: 3rem 2rem;">
-      <img src="images/logo-footer-wit.png" alt="Bassa logo wit" style="height: 40px; margin-bottom: 1rem;">
+      <img src="images/BASSA-logo groot.png" alt="Bassa logo wit" style="height: 40px; margin-bottom: 1rem;">
       <p style="margin: 0.5rem 0; font-weight: 300;">info@atelierbassa.nl</p>
       <div style="margin-top: 1rem; display: flex; justify-content: center; gap: 1.5rem;">
         <a href="mailto:info@atelierbassa.nl"><img src="images/Asset 2.svg" alt="Mail icoon" style="height: 20px;"></a>
